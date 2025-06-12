@@ -1,0 +1,425 @@
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.glassCard {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin-bottom: 2rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  margin-bottom: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.textInput {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.textInput:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.inputHint {
+  color: #7f8c8d;
+  font-size: 0.8rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.featureGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.featureCard {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03);
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.featureCardActive {
+  border: 2px solid #3498db;
+  background-color: #f8fafc;
+}
+
+.featureIcon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.featureContent h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+  color: #2c3e50;
+}
+
+.featureContent p {
+  margin: 0;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.checkmark {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #3498db;
+  display: none;
+}
+
+.featureCardActive .checkmark {
+  display: block;
+}
+
+.hiddenCheckbox {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.featureOptionsContainer {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03);
+  margin-top: 1rem;
+}
+
+.featureOptionsTitle {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  font-size: 1.2rem;
+}
+
+.optionsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 0.8rem;
+}
+
+.optionButton {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+}
+
+.optionButton:hover {
+  border-color: #3498db;
+}
+
+.optionButtonActive {
+  background: #3498db;
+  color: white;
+  border-color: #3498db;
+}
+
+.hiddenRadio {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.customRangeContainer {
+  margin-top: 1rem;
+}
+
+.customRangeInputs {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.rangeInput {
+  flex: 1;
+  padding: 0.8rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.rangeInput:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.performanceSection {
+  margin-bottom: 1.5rem;
+}
+
+.performanceSection h4 {
+  margin-bottom: 0.8rem;
+  color: #2c3e50;
+  font-size: 1rem;
+}
+
+.optionsRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.submitButton {
+  background: linear-gradient(135deg, #3498db, #2ecc71);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.submitButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+}
+
+.submitButton:disabled {
+  background: #bdc3c7;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.arrowIcon {
+  font-size: 1.2rem;
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.errorCard {
+  background: #ffecec;
+  border: 1px solid #ffb3b3;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  color: #e74c3c;
+  text-align: center;
+}
+
+.resultCard {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+  margin-bottom: 2rem;
+}
+
+.resultCardVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.resultHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.resultHeader h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.priceTag {
+  color: #7f8c8d;
+  font-size: 1rem;
+}
+
+.recommendationsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.phoneCard {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03);
+  transition: all 0.3s ease;
+}
+
+.phoneCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.phoneRank {
+  background: #3498db;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 1.5rem;
+  flex-shrink: 0;
+}
+
+.phoneInfo {
+  flex: 1;
+}
+
+.phoneInfo h3 {
+  margin: 0 0 0.5rem 0;
+  color: #2c3e50;
+  font-size: 1.2rem;
+}
+
+.phoneDetails {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.9rem;
+  color: #7f8c8d;
+}
+
+.phoneDetails span {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.placeholderCard {
+  background: white;
+  border-radius: 20px;
+  padding: 3rem 2rem;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  color: #7f8c8d;
+  font-size: 1.1rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .featureGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .optionsGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .phoneCard {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .phoneRank {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .glassCard {
+    padding: 1.5rem;
+  }
+  
+  .optionsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .customRangeInputs {
+    flex-direction: column;
+  }
+  
+  .phoneDetails {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
